@@ -1,0 +1,79 @@
+
+	Result tim kiem tong diem:
+22 thaiwull hanoi nu 6.0 8.0 4.0
+
+	Result tim kiem tong diem:
+
+	Result tim kiem tong diem:
+
+	Result tim kiem tong diem:
+05 Dinh hue nu 8 2 8
+11 Ding hue nam 3 7 8
+22 thaiwull hanoi nu 6.0 8.0 4.0
+
+	Result tim kiem diem:
+01 Thai hanoi nam 8 8 9
+02 lenh hoian nu 7 6 8
+03 Din hanoi nam 8 1 5
+04 Len saigon nu 6 0 8
+05 Dinh hue nu 8 2 8
+06 An vinh nu 8 1 5
+10 Leh saigon nu 6 0 8
+11 Ding hue nam 3 7 8
+12 Ang vinh nu 8 1 5
+16 Leh saigon nu 6 0 8
+17 Dien hue nam 3 2 8
+18 Anh vinh nu 8 1 5
+22 thaiwull hanoi nu 6.0 8.0 4.0
+
+	Result tim kiem tong diem:
+05 Dinh hue nu 8 2 8
+15 Phog Lao nu 8 4 6
+22 thaiwull hanoi nu 6.0 8.0 4.0
+
+	Result tim kiem tong diem:
+03 Din hanoi nam 8 1 5
+04 lenNew saigon nu 6 0 8
+06 An vinh nu 8 1 5
+10 Leh saigon nu 6 0 8
+12 Ang vinh nu 8 1 5
+16 Leh saigon nu 6 0 8
+18 Anh vinh nu 8 1 5
+20 Hanh hue nu 3 6 5
+
+	Result tim kiem diem:
+03 Din hanoi nam 8 1 5
+06 An vinh nu 8 1 5
+12 Ang vinh nu 8 1 5
+18 Anh vinh nu 8 1 5
+20 Hanh hue nu 3 6 5
+
+	Result tim kiem tong diem:
+15 Phog Lao nu 8 4 6
+22 thaiwull hanoi nam 6.0 8.0 4.0
+
+	Result tim kiem tong diem:
+13 Vinh NgheAn nam 7 2 6
+14 Hao hue nu 3 2 10
+21 Phong Lao nu 2 7 6
+
+	Result tim kiem diem:
+02 lenh hoian nu 7 6 8
+07 Vinh NgheAn nam 7 2 4
+11 Ding hue nam 4 7 8
+13 Vinh NgheAn nam 7 2 6
+19 Vinh NgheAn nam 7 2 4
+21 Phong Lao nu 2 7 6
+23 Vinh NgheAn nam 7 9 9
+28 thaisel 1link nam 7.0 8.0 7.028
+
+	Result tim kiem diem:
+02 lenh hoian nu 7 6 8
+07 Vinh NgheAn nam 7 2 4
+11 Ding hue nam 4 7 8
+13 Vinh NgheAn nam 7 2 6
+19 Vinh NgheAn nam 7 2 4
+21 Phong Lao nu 2 7 6
+23 Vinh NgheAn nam 7 9 9
+27 moi3 moi3 moi3 8.0 7.0 6.0
+28 thaisel 1link nam 7.0 8.0 7.028

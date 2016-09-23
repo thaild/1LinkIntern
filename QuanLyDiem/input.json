@@ -1,0 +1,57 @@
+[
+	{
+	"id" : "01",
+	"name" : "le thai",
+	"add" : "hanoi",
+	"gender" : "nam",
+	"scores": {
+		"math" : 8,
+		"physics" : 8,
+		"chemistry" : 9
+		}
+	},
+	{
+	"id" : "02",
+	"name" : "le thai",
+	"add" : "hanoi",
+	"gender" : "nam",
+	"scores": {
+		"math" : 8,
+		"physics" : 8,
+		"chemistry" : 9
+		}
+	},
+	{
+	"id" : "03",
+	"name" : "le thai",
+	"add" : "hanoi",
+	"gender" : "nam",
+	"scores": {
+		"math" : 8,
+		"physics" : 8,
+		"chemistry" : 9
+		}
+	},
+	{
+	"id" : "04",
+	"name" : "le thai",
+	"add" : "hanoi",
+	"gender" : "nam",
+	"scores": {
+		"math" : 8,
+		"physics" : 8,
+		"chemistry" : 9
+		}
+	},
+	{
+	"id" : "05",
+	"name" : "le thai",
+	"add" : "hanoi",
+	"gender" : "nam",
+	"scores": {
+		"math" : 8,
+		"physics" : 8,
+		"chemistry" : 9
+		}
+	}
+]

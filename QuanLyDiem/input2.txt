@@ -1,0 +1,29 @@
+28
+01 Thai hanoi nam 8 8 9
+ 02 lenh hoian nu 7 6 8
+ 03 Din hanoi nam 8 1 5
+ 04 lenNew saigon nu 6 0 8
+ 05 Dinh hue nu 8 2 8
+ 06 An vinh nu 8 1 5
+ 07 Vinh NgheAn nam 7 2 4
+ 08 Hai hue nu 6 2 8
+ 09 Pong Lao nu 6 4 6
+ 10 Leh saigon nu 6 0 8
+ 11 Ding hue nam 4 7 8
+ 12 Ang vinh nu 8 1 5
+ 14 Hao hue nu 3 2 10
+ 15 Phog Lao nu 8 4 6
+ 16 Leh saigon nu 6 0 8
+ 17 Dien hue nam 3 2 8
+ 18 Anh vinh nu 8 1 5
+ 19 Vinh NgheAn nam 7 2 4
+ 20 Hanh hue nu 3 6 5
+ 21 Phong Lao nu 2 7 6
+ 22 thaiwull hanoi nam 6.0 8.0 4.0
+ 23 Vinh NgheAn nam 7 9 9
+ 24 Hao hue nu 8 8 8
+ 25 Phog Lao nu 9 9 9
+ 26 Leh saigon nu 10 10 9
+ 27 Dien hue nam 9 8 10
+ 28 thaisel 1link nam 7.0 8.0 7.0
+ 13 Vinh NgheAn nam 7 2 6
