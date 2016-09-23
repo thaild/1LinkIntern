@@ -1,0 +1,34 @@
+
+Student co total < 15:
+11
+03 Din hanoi nam 8 1 5
+ 05 Dinh hue nam 3 2 8
+ 08 Hai hue nu 3 2 5
+ 11 Ding hue nam 3 2 8
+ 12 Ang vinh nu 8 1 5
+ 13 Vin NgheAn nam 7 2 4
+ 15 Phog Lao nu 2 4 6
+ 16 Leh saigon nu 6 0 8
+ 19 Vinh NgheAn nam 7 2 4
+ 20 Hanh hue nu 3 2 5
+ 21 Phong Lao nu 2 4 6
+Student co total < 20:
+6
+04 Len saigon nu 6 3 8
+ 06 An vinh nu 8 5 5
+ 07 Vinh NgheAn nam 7 7 4
+ 14 Hao hue nu 3 10 5
+ 17 Dien hue nam 9 2 8
+ 18 Anh vinh nu 8 5 5
+Student co total < 25:
+3
+02 Le hoian nu 7 6 8
+ 09 Pong Lao nu 7 9 6
+ 10 Leh saigon nu 5 8 8
+Student co total >25:
+5
+22 Dien hue nam 9 9 9
+ 23 Anh vinh nu 10 10 9
+ 24 Vinh NgheAn nam 9 8 9
+ 25 Hanh hue nu 10 8 9
+ 26 Phong Lao nu 10 10 10

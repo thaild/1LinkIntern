@@ -1,0 +1,12 @@
+crawler, lưu trữ phân tán
+viết plugin nutch
+hadoop viết map-reduce
+plugin dựa trên solr, elastic search
+ambari
+---
+machine learning
+
+naive bayes, support vector machine
+supervised/ unsupervised learning
+dimensionality reduction
+Anomaly detection

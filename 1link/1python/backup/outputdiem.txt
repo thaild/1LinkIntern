@@ -1,0 +1,7 @@
+
+Result tim kiem diem:
+['Thai 1 hanoi nam 8 8 9']
+['Le 2 hanoi nu 7 6 8']
+['Dinh 3 hanoi nam 8 1 5']
+['Leee 5 han nu 6 0 8']
+['Dinhhh 4 han nam 8 2 8']
