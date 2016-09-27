@@ -1,0 +1,3 @@
+ve diagram
+code lai use json
+vào ra /ghi file với json chưa quen

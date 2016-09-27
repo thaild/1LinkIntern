@@ -1,0 +1,5 @@
+[
+{"gender": "nam", "add": "ha noi", "scores": {"chemistry": 9, "physics": 8, "math": 8}, "id": "01", "name": "thai"},
+{"gender": "nam", "add": "hanoi", "scores": {"chemistry": 10, "physics": 8, "math": 8}, "id": "08", "name": "thai le"},
+{"gender": "nam", "add": "ha noi", "scores": {"chemistry": 9, "physics": 8, "math": 8}, "id": "09", "name": "le dinh thai"},
+{"gender": "nam", "add": "hanoi", "scores": {"chemistry": 9, "physics": 8, "math": 8}, "id": "12", "name": "thai le"}]

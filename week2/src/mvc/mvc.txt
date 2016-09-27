@@ -1,0 +1,28 @@
+class Model(object)
+	def read(filename, modes)
+	def write(filename, modes)
+	def valid_write(filename, modes, student)
+	def md_delete(list, id)
+	def md_edit(choose, list, string_new, i)
+	def sorted(list)
+	def search_name(list, name)
+	def search_id(list, id)
+	def search_score(list, score)
+	def search_total_score(list, total_scores)
+	def statistic(list, score_min, score_max)
+
+class View(object)
+	def _add_student
+	def _edit_option(list)
+	def _search_option(list)
+	def _statistic_option(list)
+	def view_main
+	
+class Controller(object)
+	def con_load()
+	def con_edit(choose, list, string_new, i)
+	def con_delete(list, id)
+	def con_search(choose, list, find_str)
+	def con_statistic(list, score_min, score_max)
+	
+	
