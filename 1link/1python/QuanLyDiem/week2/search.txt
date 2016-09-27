@@ -1,0 +1,28 @@
+
+
+Result Score 8
+18
+01 Thai hanoi nam 8.0 8.0 9.0
+ 02 LE hoian nu 7.0 6.0 8.0
+ 03 Din hanoi nam 8.0 1.0 5.0
+ 04 lenNew saigon nu 6.0 0.0 8.0
+ 05 Dinh hue nu 8.0 2.0 8.0
+ 06 An vinh nu 8.0 1.0 5.0
+ 08 Hai hue nu 6.0 2.0 8.0
+ 10 Leh saigon nu 6.0 0.0 8.0
+ 11 Ding hue nam 4.0 7.0 8.0
+ 12 Ang vinh nu 8.0 1.0 5.0
+ 15 Phog Lao nu 8.0 4.0 6.0
+ 16 Leh saigon nu 6.0 0.0 8.0
+ 17 Dien hue nam 3.0 2.0 8.0
+ 18 Anh vinh nu 8.0 1.0 5.0
+ 22 thaiwull hanoi nam 6.0 8.0 4.0
+ 24 Hao hue nu 8.0 8.0 8.0
+ 27 Dien hue nam 9.0 8.0 10.0
+ 28 thaisel 1link nam 7.0 8.0 7.0
+
+Result ID 3
+3
+03 Din hanoi nam 8.0 1.0 5.0
+ 23 Vinh NgheAn nam 7.0 9.0 9.0
+ 13 Vinh NgheAn nam 7.0 2.0 6.0

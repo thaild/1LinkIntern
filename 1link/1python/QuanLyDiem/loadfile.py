@@ -1,5 +1,3 @@
-from solution import *
-
 Students = []
 f = open("input.txt", "r")
 n = int(f.readline())

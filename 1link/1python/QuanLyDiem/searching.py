@@ -1,4 +1,4 @@
-from solution import *
+from week1.solution import *
 
 def editStudent(self):
     Students = StudentTmp.read_from_file()

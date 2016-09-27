@@ -12,7 +12,7 @@ class Student(object):
 
     def load_file(self):
         Students = []
-        f = open("input2.txt", "r")
+        f = open("input.txt", "r")
         n = int(f.readline())
         print 'Total Student: n', n
         for i in range(n):

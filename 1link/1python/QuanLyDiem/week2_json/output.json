@@ -1,0 +1,57 @@
+[
+  {
+    "gender": "nam",
+    "add": "ha noi",
+    "id": "01",
+    "name": "le dinh thai",
+    "scores": {
+      "chemistry": 9,
+      "physics": 8,
+      "math": 8
+    }
+  },
+  {
+    "gender": "nam",
+    "add": "hanoi",
+    "id": "02",
+    "name": "le thai dinh",
+    "scores": {
+      "chemistry": 9,
+      "physics": 8,
+      "math": 8
+    }
+  },
+  {
+    "gender": "nam",
+    "add": "hanoi",
+    "id": "03",
+    "name": "thai le dinh",
+    "scores": {
+      "chemistry": 9,
+      "physics": 8,
+      "math": 8
+    }
+  },
+  {
+    "gender": "nam",
+    "add": "hanoi",
+    "id": "04",
+    "name": "le thai",
+    "scores": {
+      "chemistry": 9,
+      "physics": 8,
+      "math": 8
+    }
+  },
+  {
+    "gender": "nam",
+    "add": "hanoi",
+    "id": "05",
+    "name": "thai le",
+    "scores": {
+      "chemistry": 9,
+      "physics": 8,
+      "math": 8
+    }
+  }
+]

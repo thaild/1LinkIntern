@@ -1,0 +1,42 @@
+
+total scores <15
+13
+03 Din hanoi nam 8.0 1.0 5.0
+ 04 lenNew saigon nu 6.0 0.0 8.0
+ 06 An vinh nu 8.0 1.0 5.0
+ 07 Vinh NgheAn nam 7.0 2.0 4.0
+ 10 Leh saigon nu 6.0 0.0 8.0
+ 12 Ang vinh nu 8.0 1.0 5.0
+ 16 Leh saigon nu 6.0 0.0 8.0
+ 17 Dien hue nam 3.0 2.0 8.0
+ 18 Anh vinh nu 8.0 1.0 5.0
+ 19 Vinh NgheAn nam 7.0 2.0 4.0
+ 20 Hanh hue nu 3.0 6.0 5.0
+ 1 1 1 1 1.0 1.0 1.0
+ 2 2 2 2 2.0 2.0 2.0
+
+total scores <20
+9
+05 Dinh hue nu 8.0 2.0 8.0
+ 08 Hai hue nu 6.0 2.0 8.0
+ 09 Pong Lao nu 6.0 4.0 6.0
+ 11 Ding hue nam 4.0 7.0 8.0
+ 14 Hao hue nu 3.0 2.0 10.0
+ 15 Phog Lao nu 8.0 4.0 6.0
+ 21 Phong Lao nu 2.0 7.0 6.0
+ 22 thaiwull hanoi nam 6.0 8.0 4.0
+ 13 Vinh NgheAn nam 7.0 2.0 6.0
+
+total scores <25
+3
+02 LE hoian nu 7.0 6.0 8.0
+ 24 Hao hue nu 8.0 8.0 8.0
+ 28 thaisel 1link nam 7.0 8.0 7.0
+
+total scores <30
+5
+01 Thai hanoi nam 8.0 8.0 9.0
+ 23 Vinh NgheAn nam 7.0 9.0 9.0
+ 25 Phog Lao nu 9.0 9.0 9.0
+ 26 Leh saigon nu 10.0 10.0 9.0
+ 27 Dien hue nam 9.0 8.0 10.0
