@@ -77,10 +77,7 @@ class Model(object):
 		Model().write('input.txt', 'w', self._tmp)
 
 	def sorted(self, _list):
-		self._list = _list
-		for j in range(0, self._list.__len__() - 1):
-			if int(self._list[j].get_id()) > int(self._list[j + 1].get_id()):
-				self._list[j], self._list[j + 1] = self._list[j + 1], self._list[j]
+		self._list = sorted(_list, key=lambda i: i._id)
 		return self._list
 
 	def search_total_score(self, _list, _score):
@@ -90,7 +87,6 @@ class Model(object):
 		for i in range(self._list.__len__()):
 			if float(self._list[i].sum_score()) == float(_score):
 				_total += 1
-				# print (self._list[i])
 				write_str.append(str(self._list[i]))
 		_str = str(write_str).lstrip('[').rstrip(']').replace(",", "\n", _total).replace("'", "", _total * 2).strip()
 		self._tmp.append('\n' + 'Result total scores ' + str(_score) + '\n' + str(_total) + '\n' + str(_str))
@@ -99,27 +95,21 @@ class Model(object):
 	def search_name(self, _list, _name):
 		self._list = _list
 		write_str = []
-		_total = 0
-		for i in range(self._list.__len__()):
-			if _name.lower() in str(self._list[i].get_name()).lower():
-				_total += 1
-				# print (self._list[i])
-				write_str.append(str(self._list[i]))
-		_str = str(write_str).lstrip('[').rstrip(']').replace(",", "\n", _total).replace("'", "", _total * 2).strip()
-		self._tmp.append('\n' + 'Result Name ' + str(_name) + '\n' + str(_total) + '\n' + str(_str))
+		rs = filter(lambda x: _name in x._name, _list)
+		for i in rs:
+			write_str.append(str(i))
+		_str = str(write_str).lstrip('[').rstrip(']').replace(",", "\n", rs.__len__()).replace("'", "", rs.__len__() * 2)
+		self._tmp.append('\n' + 'Result Name ' + str(_name) + '\n' + str(rs.__len__()) + '\n' + str(_str))
 		return self._tmp
 
 	def search_id(self, _list, _id):
 		self._list = _list
 		write_str = []
-		_total = 0
-		for i in range(self._list.__len__()):
-			if str(_id) in self._list[i].get_id():
-				_total += 1
-				# print (self._list[i])
-				write_str.append(str(self._list[i]))
-		_str = str(write_str).lstrip('[').rstrip(']').replace(",", "\n", _total).replace("'", "", _total * 2).strip()
-		self._tmp.append('\n' + 'Result ID ' + str(_id) + '\n' + str(_total) + '\n' + str(_str))
+		rs = filter(lambda x: _id in x._id, _list)
+		for i in rs:
+			write_str.append(str(self._list[i]))
+		_str = str(write_str).lstrip('[').rstrip(']').replace(",", "\n", rs.__len__()).replace("'", "", rs.__len__() * 2)
+		self._tmp.append('\n' + 'Result ID ' + str(_id) + '\n' + str(rs.__len__()) + '\n' + str(_str))
 		return self._tmp
 
 	def search_score(self, _list, _score):
