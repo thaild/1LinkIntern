@@ -1,12 +1,12 @@
 [
-{"gender": "nam", "add": "ha noi", "scores": {"chemistry": 9, "physics": 8, "math": 8}, "id": "01", "name": "thai"},
-{"gender": "nam", "add": "hanoi", "scores": {"chemistry": 3, "physics": 8, "math": 8}, "id": "03", "name": "thai le"},
-{"gender": "nam", "add": "hanoi", "scores": {"chemistry": 2, "physics": 8, "math": 8}, "id": "05", "name": "thai le"},
-{"gender": "nam", "add": "ha noi", "scores": {"chemistry": 1, "physics": 8, "math": 8}, "id": "04", "name": "le dinh thai"},
-{"gender": "nam", "add": "hanoi", "scores": {"chemistry": 7, "physics": 8, "math": 8}, "id": "06", "name": "le thai dinh"},
-{"gender": "nam", "add": "hanoi", "scores": {"chemistry": 8, "physics": 8, "math": 8}, "id": "07", "name": "thai dinh"},
-{"gender": "nam", "add": "hanoi", "scores": {"chemistry": 10, "physics": 8, "math": 8}, "id": "08", "name": "thai le"},
-{"gender": "nam", "add": "ha noi", "scores": {"chemistry": 9, "physics": 8, "math": 8}, "id": "09", "name": "le dinh thai"},
-{"gender": "nam", "add": "hanoi", "scores": {"chemistry": 2, "physics": 8, "math": 8}, "id": "10", "name": "le dinh"},
-{"gender": "nam", "add": "hanoi", "scores": {"chemistry": 4, "physics": 8, "math": 8}, "id": "11", "name": "thai le dinh"},
-{"gender": "nam", "add": "hanoi", "scores": {"chemistry": 9, "physics": 8, "math": 8}, "id": "12", "name": "thai le"}]
+{"gender": "nam", "add": "ha noi", "id": "01", "name": "thai", "scores": {"chemistry": 9, "physics": 8, "math": 8}},
+{"gender": "nam", "add": "hanoi", "id": "03", "name": "thai le", "scores": {"chemistry": 3, "physics": 8, "math": 8}},
+{"gender": "nam", "add": "hanoi", "id": "05", "name": "thai le", "scores": {"chemistry": 2, "physics": 8, "math": 8}},
+{"gender": "nam", "add": "ha noi", "id": "04", "name": "Le", "scores": {"chemistry": 1, "physics": 8, "math": 8}},
+{"gender": "nam", "add": "hanoi", "id": "06", "name": "le thai dinh", "scores": {"chemistry": 7, "physics": 8, "math": 8}},
+{"gender": "nam", "add": "hanoi", "id": "07", "name": "thai dinh", "scores": {"chemistry": 8, "physics": 8, "math": 8}},
+{"gender": "nam", "add": "hanoi", "id": "08", "name": "thai le", "scores": {"chemistry": 10, "physics": 8, "math": 8}},
+{"gender": "nam", "add": "ha noi", "id": "09", "name": "le dinh thai", "scores": {"chemistry": 9, "physics": 8, "math": 8}},
+{"gender": "nam", "add": "hanoi", "id": "10", "name": "le dinh", "scores": {"chemistry": 2, "physics": 8, "math": 8}},
+{"gender": "nam", "add": "hanoi", "id": "11", "name": "thai le dinh", "scores": {"chemistry": 4, "physics": 8, "math": 8}},
+{"gender": "nam", "add": "hanoi", "id": "12", "name": "thai le", "scores": {"chemistry": 9, "physics": 8, "math": 8}}]

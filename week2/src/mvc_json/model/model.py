@@ -2,7 +2,7 @@
 import json
 
 
-class Model(object):
+class Student(object):
 	def __init__(self, _id=None, name=None, add=None, sex=None, math=0, physics=0, chem=0):
 		self._name = name
 		self._id = _id
@@ -11,12 +11,12 @@ class Model(object):
 		self._math = float(math)
 		self._physics = float(physics)
 		self._chemistry = float(chem)
+
+
+class Model(object):
+	def __init__(self):
 		self._list = []
 		self._tmp = []
-
-	#
-	# def sum_score(self):
-	# 	return self._math + self._physics + self._chemistry
 
 	def __str__(self):
 		return '{self._id} {self._name} {self._add} {self._sex} {self._math} {self._physics} {self._chemistry}'.format(
@@ -52,9 +52,8 @@ class Model(object):
 		fo = open(file_name, _modes)
 		fo.write('[\n')
 		for i in range(students.__len__()):
+			student = {}
 			fo.write(str(json.dumps(students[i])) + ',\n')
-
-		student = {}
 		scores = {}
 		for i in range(_tmp.__len__()):
 			_id, name, add, sex, math, physics, chemistry = _tmp[i].split()
@@ -159,7 +158,6 @@ class Model(object):
 		else:
 			write_str = 'No result'
 		return write_str
-
 
 	def md_edit(self, k, _list, str_new, i):
 		self._list = _list
