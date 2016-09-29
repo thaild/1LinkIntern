@@ -5,7 +5,7 @@ from model.model import Model
 
 student = {}
 scores = {}
-fi = open("input.json").read()
+fi = open("input2.json").read()
 # fo = open("output.json", "w+")
 data = json.loads(fi)
 for x in data:
