@@ -1,0 +1,17 @@
+solution
+các luồng sẽ chia sẻ 2 tài nguyên chung đó là mảng các data_diemthi và mảng chứa input2.
+Ta cần đảm bảo tại mỗi thời điểm chỉ có duy nhất một luồng được truy cập tài nguyên chung,
+nếu luồng khác muốn truy cập phải đợi (block) cho đến khi luồng trước đó cập nhật xong. 
+Python cung cấp cho chúng ta các class cơ bản để thực hiện đồng bộ luồng bao gồm: 
+Lock, RLock, Condition, Event, Semaphore,...
+
+----------
+tạo một file thực thi nhiệm vụ load tên file trong thư mục DIEM_THI -> list_file_name, 
+	load xong thì đọc nội dung từng file  --> write >> input.json (root data)
+
+1 class khac pop file_name khỏi list_file_name
+
+--
+doc ra roi gi vao file thi luc no ghi vao chuong trinh chinh se phai dung?? 
+thread ben ct chinh?
+nhung neu doc 1 file thi ghi vao the nao?
