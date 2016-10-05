@@ -120,7 +120,6 @@ if __name__ == '__main__':
 			print file_type, filename, action
 			if filename not in list_file_dir:
 				list_file_dir.append(filename)
-				# set(list_file_dir)
 				if action == 'Created':
 					load_data_from_file(filename)
 		except Queue.Empty:
