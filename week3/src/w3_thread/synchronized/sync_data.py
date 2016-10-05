@@ -113,14 +113,14 @@ if __name__ == '__main__':
 
 	for p in path_to_watch:
 		Watcher(p, files_changed)
-	list_file_dir = []
+		
+	list_file_dir = [] # list file: save file new vao 
 	while 1:
 		try:
 			file_type, filename, action = files_changed.get_nowait()
 			print file_type, filename, action
 			if filename not in list_file_dir:
 				list_file_dir.append(filename)
-				# set(list_file_dir)
 				if action == 'Created':
 					load_data_from_file(filename)
 		except Queue.Empty:
