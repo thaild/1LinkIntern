@@ -40,9 +40,9 @@ def watch_path(path_to_watch, include_subdirectories=False):
 			win32con.FILE_NOTIFY_CHANGE_SECURITY,
 			None,
 			None
-		)
+		) # return a list result(action, filename)
 		for action, file in results:
-			full_filename = os.path.join(path_to_watch, file)
+			full_filename = os.path.join(path_to_watch, file) # realpath of filename
 			if not os.path.exists(full_filename):
 				file_type = "deleted"
 			elif os.path.isdir(full_filename):
@@ -82,26 +82,20 @@ class DataFile():
 	@staticmethod
 	def save(new_array):
 		old_array = []
-		fi = open("../input2.json")
+		fi = open("../input3.json")
 		try:
 			old_array = json.loads(fi.read())
 		except Exception:
 			print (Exception.message)
 		fi.close()
+
 		for i in range(new_array.__len__()):
 			old_array.append(new_array[i])  # append data in file input to arr
 
-		tmp_array = []
-		[tmp_array.append(json.dumps(k)) for k in old_array]
-		tmp_array = list(set(tmp_array))  # del phan tu trung lap
-		fo = open("../input2.json", "w")
-		fo.write('[\n')
-		for i in range(tmp_array.__len__()):
-			fo.write(tmp_array[i])
-			if i < tmp_array.__len__() - 1:
-				fo.write(',\n')
-		fo.write(']')
-		# fo.write(old_array)
+		# old_array = list(set(old_array))  # del phan tu trung lap
+		fo = open("../input3.json", "w")
+		print old_array.__len__()
+		fo.write(json.dumps(old_array))
 		fo.close()
 
 
@@ -121,5 +115,7 @@ if __name__ == '__main__':
 			if action == 'Created':
 				FileLoader.load(filename)
 		except Queue.Empty:
-			# pass
 			time.sleep(1)
+
+
+
