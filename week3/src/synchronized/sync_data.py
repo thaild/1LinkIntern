@@ -1,12 +1,11 @@
 from __future__ import generators
 import os
-import sys
 import Queue
 import threading
 import time
 import json
-from lib import win32con
-from lib import win32file
+import win32con
+import win32file
 
 ACTIONS = {
 	1: "Created",
@@ -66,62 +65,61 @@ class Watcher(threading.Thread):
 			self.results_queue.put(result)
 
 
-def load_data_from_file(path_file):
-	data_import = []
-	data_tmp = []
-	file_input = open(path_file).read()
-	for k in range(json.loads(file_input).__len__()):
-		data_import.append(json.loads(file_input)[k])
-	for i in range(data_import.__len__()):
-		data_tmp.append(json.dumps(data_import[i]))
-	save_data_file(data_tmp)
+class FileLoader(threading.Thread):
+	@staticmethod
+	def load(pathfile):
+		fi = open(pathfile)
+		new_array = []
+		try:
+			new_array = json.loads(fi.read())
+		except Exception:
+			print (Exception.message)
+		DataFile.save(new_array)
+		fi.close()
 
 
-def save_data_file(data_tmp):
-	data_file = []
-	fi = open("../input2.json").read()
-	try:
-		fi_data = json.loads(fi)
-		for i in range(fi_data.__len__()):
-			data_file.append(json.dumps(fi_data[i]))
-	except Exception:
-		print (Exception.message)
-	for i in range(data_tmp.__len__()):
-		data_file.append(data_tmp[i]) # append data in file input to arr
+class DataFile():
+	@staticmethod
+	def save(new_array):
+		old_array = []
+		fi = open("../input2.json")
+		try:
+			old_array = json.loads(fi.read())
+		except Exception:
+			print (Exception.message)
+		fi.close()
+		for i in range(new_array.__len__()):
+			old_array.append(new_array[i])  # append data in file input to arr
 
-	data_file = list(set(data_file)) # del phan tu trung lap
-	fo = open("../input2.json", "w")
-	fo.write('[\n')
-	for i in range(data_file.__len__()):
-		fo.write(data_file[i])
-		if i < data_file.__len__() - 1:
-			fo.write(',\n')
-	fo.write(']')
-	fo.close()
+		tmp_array = []
+		[tmp_array.append(json.dumps(k)) for k in old_array]
+		tmp_array = list(set(tmp_array))  # del phan tu trung lap
+		fo = open("../input2.json", "w")
+		fo.write('[\n')
+		for i in range(tmp_array.__len__()):
+			fo.write(tmp_array[i])
+			if i < tmp_array.__len__() - 1:
+				fo.write(',\n')
+		fo.write(']')
+		# fo.write(old_array)
+		fo.close()
 
 
 if __name__ == '__main__':
-	PATH_TO_WATCH = ["../data/DIEM_THI_2016/"]
-	try:
-		path_to_watch = sys.argv[1].split(",") or PATH_TO_WATCH
-	except:
-		path_to_watch = PATH_TO_WATCH
-	path_to_watch = [os.path.abspath(p) for p in path_to_watch]  # return path real
-
-	print ("Watching %s at %s" % (", ".join(path_to_watch), time.asctime()))
+	path_to_watch = [os.path.abspath("../data/DIEM_THI_2016/")]  # return path real
+	print "Watching %s at %s" % (", ".join(path_to_watch), time.asctime())
 	files_changed = Queue.Queue()
+	Watcher(path_to_watch[0], files_changed)
 
-	for p in path_to_watch:
-		Watcher(p, files_changed)
 	list_file_dir = []
 	while 1:
 		try:
 			file_type, filename, action = files_changed.get_nowait()
 			print file_type, filename, action
-			if filename not in list_file_dir:
-				list_file_dir.append(filename)
-				if action == 'Created':
-					load_data_from_file(filename)
+			# if filename not in list_file_dir:
+			# 	list_file_dir.append(filename)
+			if action == 'Created':
+				FileLoader.load(filename)
 		except Queue.Empty:
-			pass
-		time.sleep(1)
+			# pass
+			time.sleep(1)
