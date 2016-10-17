@@ -1,0 +1,12 @@
+[
+{"gender": "nam", "add": "ha noi", "chemistry": 9, "physics": 8, "math": 4, "id": "01", "name": "thai"},
+{"gender": "nu", "add": "nghe an", "chemistry": 3, "physics": 8, "math": 9, "id": "03", "name": "thai le"},
+{"gender": "nam", "add": "hanoi", "chemistry": 2, "physics": 4, "math": 8, "id": "05", "name": "thai le"},
+{"gender": "nu", "add": "ha noi", "chemistry": 1, "physics": 8, "math": 5, "id": "04", "name": "Le"},
+{"gender": "nam", "add": "nghe an", "chemistry": 7, "physics": 5, "math": 8, "id": "06", "name": "le thai dinh"},
+{"gender": "nu", "add": "hanoi", "chemistry": 8, "physics": 8, "math": 8, "id": "07", "name": "thai dinh"},
+{"gender": "nam", "add": "hoi an", "chemistry": 10, "physics": 8, "math": 9, "id": "08", "name": "thai le"},
+{"gender": "nu", "add": "ha noi", "chemistry": 9, "physics": 3, "math": 7, "id": "09", "name": "le dinh thai"},
+{"gender": "nam", "add": "ha nam", "chemistry": 2, "physics": 8, "math": 8, "id": "10", "name": "le dinh"},
+{"gender": "nam", "add": "hanoi", "chemistry": 4, "physics": 9, "math": 4, "id": "11", "name": "Thai LE"},
+{"gender": "nam", "add": "lao cai", "chemistry": 9, "physics": 8, "math": 6, "id": "12", "name": "thai le"}]

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../1python/QuanLyDiem/.idea/QuanLyDiem.iml" filepath="$PROJECT_DIR$/../1python/QuanLyDiem/.idea/QuanLyDiem.iml" />
+      <module fileurl="file://E:/untitled/.idea/untitled.iml" filepath="E:/untitled/.idea/untitled.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../1python/week3-thread/w3_thread/.idea/week2_json.iml" filepath="$PROJECT_DIR$/../1python/week3-thread/w3_thread/.idea/week2_json.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/week4.iml" filepath="$PROJECT_DIR$/.idea/week4.iml" />
+    </modules>
+  </component>
+</project>

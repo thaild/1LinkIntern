@@ -1,0 +1,4 @@
+[{"name": "thai le", "gender": "nam", "add": "hanoi", "chemistry": 2, "physics": 4, "id": "28", "math": 8},
+{"name": "Le", "gender": "nam", "add": "ha noi", "chemistry": 1, "physics": 8, "id": "27", "math": 5},
+{"name": "le thai dinh", "gender": "nam", "add": "hanoi", "chemistry": 7, "physics": 5, "id": "29", "math": 8},
+{"name": "thai dinh", "gender": "nam", "add": "hanoi", "chemistry": 8, "physics": 8, "id": "30", "math": 8}]

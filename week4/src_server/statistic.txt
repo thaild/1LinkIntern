@@ -1,0 +1,22 @@
+
+Result Search 0 <= scores < 15
+05 thai le hanoi nam 8 2 4
+04 Le ha noi nam 5 1 8
+1 1123 qwe qwe 1.0 3.0 2.0
+
+Result Search 15 <= scores < 20
+09 le dinh thai ha noi nam 7 9 3
+10 le dinh hanoi nam 8 2 8
+11 Thai LE hanoi nam 4 4 9
+1233 Thai  asd nam 6.0 6.0 7.0
+12332 hsda asdas ead asd 7.0 5.0 6.0
+
+Result Search 20 <= scores < 25
+01 thai ha noi nam 4 9 8
+03 thai le hanoi nam 9 3 8
+06 le thai dinh hanoi nam 8 7 5
+07 thai dinh hanoi nam 8 8 8
+12 thai le hanoi nam 6 9 8
+
+Result Search 25 <= scores < 30
+08 thai le hanoi nam 9 10 8

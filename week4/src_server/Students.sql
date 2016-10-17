@@ -1,0 +1,15 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE Student(id INT, name TEXT, gender TEXT, address TEXT, math FLOAT, physic FLOAT, chemistry FLOAT);
+INSERT INTO "Student" VALUES(1,'thai le','nam','nghe an',6.0,8.0,6.0);
+INSERT INTO "Student" VALUES(2,'thai dinh le','nam','nghe an',6.0,6.0,9.0);
+INSERT INTO "Student" VALUES(3,'thai','nam','nghe an',6.0,8.0,6.0);
+INSERT INTO "Student" VALUES(4,'thai dinh','nam','nghe an',8.0,8.0,6.0);
+INSERT INTO "Student" VALUES(5,'thai le dinh','nam','nghe an',6.0,6.0,6.0);
+INSERT INTO "Student" VALUES(6,'thai le','nam','nghe an',6.0,6.0,9.0);
+INSERT INTO "Student" VALUES(7,'thai le','nam','nghe an',5.0,6.0,10.0);
+INSERT INTO "Student" VALUES(8,'thai le','nam','nghe an',3.0,6.0,8.0);
+INSERT INTO "Student" VALUES(9,'thai le','nam','nghe an',8.0,6.0,9.0);
+INSERT INTO "Student" VALUES(10,'thai le','nam','nghe an',1.0,6.0,6.0);
+CREATE TABLE Std_tmp(id INT, name TEXT, gender TEXT, address TEXT, math FLOAT, physic FLOAT, chemistry FLOAT);
+COMMIT;
