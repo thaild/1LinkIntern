@@ -1,3 +1,4 @@
+from threading import Thread
 import threading
 import socket
 import errno, ast
@@ -6,6 +7,9 @@ from time import sleep
 from watcher_jsontosql import Watcher
 import sqlite3 as sql
 from condb import Connection
+
+TCP_IP = '0.0.0.0'
+TCP_PORT = 2016
 
 
 def main():
@@ -17,53 +21,35 @@ def main():
 		print ("\nKeyboardInterrupt catched.")
 
 
-class SockServer:
-	@staticmethod
-	def sock(s):
-		# s = socket.socket()
-		# # host = socket.gethostname()
-		# host = ''
-		# port = 44444
-		# s.bind((host, port))
-		# s.listen(2)
-		# print 'Waiting for connection...'
+class ClientThread(Thread):
+	def __init__(self, con, ip, port):
+		Thread.__init__(self)
+		self.ip = ip
+		self.port = port
+		self.conn = con
+		print "[+] New server started for " + ip + ":" + str(port)
 
-		''' multi connect client??'''
+	def run(self):
 		while True:
-			try:
-				conn, addr = s.accept()
-				print 'got connection from ', addr
-			except socket.error:
-				break
+			received = self.conn.recv(1024)
+			received_dict = ast.literal_eval(received)
 
-			while True:
-				try:
-					received = conn.recv(1024)
+			print "Server received:", received
+			con_db = sql.connect("E:\\1link\week4\src_server\Students.db")
+			with con_db:
+				send_client = []
+				con_db.row_factory = sql.Row  # return result as diction
+				rows = Connection.query(con_db, received_dict)
+				if rows is None:
+					send_client.append("No Result!!")
+				for row in rows:
+					student_tmp = str(row['id']) + '  ' + str(row['name']) + '  ' + str(
+						row['gender']) + '  ' + str(
+						row['address']) + '  ' + str(row['math']) + '  ' + str(row['physic']) + '  ' + str(
+						row['chemistry'])
+					send_client.append(student_tmp)
 
-				except socket.error or ast.ExceptHandler:
-					break
-				else:
-					try:
-						received_dict = ast.literal_eval(received)
-					except:
-						pass
-					print 'Received: ', received
-					con_db = sql.connect("E:\\1link\week4\src_server\Students.db")
-					with con_db:
-						send_client = []
-						con_db.row_factory = sql.Row  # return result as diction
-						rows = Connection.query(con_db, received_dict)
-						if rows is None:
-							send_client.append("No Result!!")
-						for row in rows:
-							student_tmp = str(row['id']) + '  ' + str(row['name']) + '  ' + str(
-								row['gender']) + '  ' + str(
-								row['address']) + '  ' + str(row['math']) + '  ' + str(row['physic']) + '  ' + str(
-								row['chemistry'])
-							send_client.append(student_tmp)
-
-					conn.sendall(str(send_client))
-				# conn.close()
+			self.conn.sendall(str(send_client))
 
 
 class Server(object):
@@ -71,23 +57,26 @@ class Server(object):
 		self.running = True
 		self.threads = []
 		self.watch = Watcher()
-		self.sock = SockServer()
 
 	def watcher(self):
 		while self.running:
 			self.watch.run()
 
 	def socket_server(self):
-		s = socket.socket()
-		host = ''
-		port = 44444
-		s.bind((host, port))
-		s.listen(2)
-		print 'Waiting for connection...'
-
+		tcpServer = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+		tcpServer.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+		tcpServer.bind((TCP_IP, TCP_PORT))
+		threads = []
 		while True:
-			self.sock.sock(s)
-		s.close()
+			tcpServer.listen(3)
+			print ("Waiting for connections...")
+			(conn, (ip, port)) = tcpServer.accept()
+			newthread = ClientThread(conn,ip, port)
+			newthread.start()
+			threads.append(newthread)
+
+		for t in threads:
+			t.join()
 
 	def go(self):
 		t1 = threading.Thread(target=self.watcher)
@@ -109,3 +98,5 @@ def join_threads(threads):
 
 if __name__ == "__main__":
 	main()
+
+

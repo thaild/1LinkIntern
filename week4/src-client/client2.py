@@ -1,8 +1,9 @@
 import socket, errno, sys
 from time import sleep
 
-host = socket.gethostname()
-port = 44444
+# host = socket.gethostname()
+host = "localhost"
+port = 2016
 
 
 class Client:
